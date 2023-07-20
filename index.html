@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8908ea6adb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="max-width">
+            <div class="space-between">
+                <h1 class="logo">Buddha</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="about" onclick="toggle()">About</li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="max-width">
+            <div class="content">
+                <div class="flex-gap">
+                    <div class="icons">
+                        <div class="column">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+
+                    <div class="content-description">
+                        <p class="para">Buddha Lama</p>
+                        <h1 class="heading">A front End Developer</h1>
+                        <p class="para">
+                            Hello there! I am a 19 years old front-end-developer and I am
+                            very passionate and dedicated on building user friendly
+                            websties.
+                        </p>
+                        <button class="btn" onclick="toggle()">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section" id="contact">
+            <i class="fa-sharp fa-solid fa-xmark" onclick="toggle()"></i>
+            <div class="max-width">
+
+                <div class="grid">
+                    <div class="about-me-section">
+                        <h1 class="heading">About Me</h1>
+                        <p class="para">Hello I am a self taught, skilled and dedicated frontend developer with a
+                            passion for creating engaging and intuitive user experiences. </p>
+                        <br>
+                        <p>As a frontend developer,I possess a strong command over HTML, CSS, and JavaScript, and React
+                            using them to craft visually appealing and responsive websites that seamlessly adapt to
+                            various devices and screen sizes.</p>
+
+                        <div class="language-icons">
+
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-react"></i>
+
+                        </div>
+                    </div>
+                    <div class="contact-me-section">
+                        <form action="https://formspree.io/f/mzblbggv" method="POST" id = "myForm">
+                            <h1 class="heading">Message Me</h1>
+                            <div class="input-div">
+                                <input type="text" placeholder="Your Name" name="name" autocomplete="off" required>
+                            </div>
+                            <div class="input-div">
+                                <input type="email" name="email" placeholder="Your Email"  autocomplete="off" required>
+                            </div>
+                            <div class="input-div">
+                                <textarea placeholder="Write a message..." name="message"  autocomplete="off" required></textarea>
+                            </div>
+                            <button class="btn btn-send" type = "submit" id = "submit_btn">Send Message</button>
+              
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section" id="projects">
+
+        <div class="max-width">
+            <h1 class="heading text-center">My Projects</h1>
+
+            <div class="cards-container"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="max-width">
+            <div class="space-evenly">
+                <h1 class="logo">Buddha</h1>
+                <ul class="footer-ul">
+                    <li><a href="#home">Home</a></li>
+                    <li onclick="toggle()"><a href="#">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

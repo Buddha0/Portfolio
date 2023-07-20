@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Asar&family=Montaga&family=Nunito:wght@600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+span{
+  color:red;
+  font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+}
+
+p,
+button {
+  font-family: "Montaga", serif;
+  line-height: 2.5rem;
+  /* font-family: 'Asar', serif; */
+}
+
+/* predefined stylings */
+a{
+  text-decoration: none;
+color:white;
+}
+.max-width {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex,
+.flex2,
+.flex-gap {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container-center {
+  margin: auto;
+}
+
+/* nav bar styling */
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 3px rgb(214, 212, 212);
+  align-items: center;
+  cursor: pointer;
+  padding:0rem 5rem;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* hero-section styling */
+.hero-section {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding:20rem 5rem;
+  position: relative;
+}
+.heading {
+  margin: 1rem 0rem;
+}
+
+.content-description {
+  width: 50%;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 7px 15px;
+  margin: 2rem 0rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.info-section {
+  width: 80%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 2px 2px 3px rgb(51, 51, 51);
+  transition: 0.3s ease-in-out;
+  clip-path: circle(0);
+}
+
+.show {
+  clip-path: circle(100%);
+  opacity: 1;
+}
+
+.fa-xmark {
+  position: absolute;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+  display: block;
+  margin: 1rem 0rem;
+}
+
+.input-div {
+  margin: 2rem 0rem;
+}
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  min-height: 15vh;
+  outline-color: rgb(71, 159, 194);
+  background-color: rgb(231, 231, 231);
+  border: none;
+  padding: 8px 10px;
+}
+
+input {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: none;
+  background-color: rgb(231, 231, 231);
+  outline-color: rgb(107, 153, 172);
+  color: rgb(0, 0, 0);
+}
+
+input:focus {
+  background-color: white;
+}
+
+textarea:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+.about-me-section {
+  padding: 2rem;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.contact-me-section {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.language-icons {
+  margin-top: 3rem;
+  font-size: 5rem;
+}
+
+.fa-js {
+  color: yellow;
+  transition: 0.3s ease;
+}
+
+.fa-react {
+  color: skyblue;
+  transition: 0.3s ease;
+}
+
+/* projects section */
+
+
+
+.project-section {
+  margin: 2rem 0rem;
+  padding:2rem 6rem;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.8rem;
+}
+
+.cards {
+  margin-top: 7rem;
+}
+
+
+.image-container{
+  width:450px;
+  height:500px;
+  background-size: cover;
+  background-position: top;
+  transition: 1.4s ease-in-out;
+}
+
+.image-container:hover{
+  background-position: bottom;
+}
+
+
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: black;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  cursor: pointer;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex2 {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    padding-left: 4rem;
+  }
+
+  nav {
+    padding: 0rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex2 {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    padding-left: 4rem;
+  }
+
+  .content-description {
+    width: 70%;
+  }
+
+  .cards-flex{
+    display: flex;
+    flex-direction: column !important;
+    gap:5rem
+  }
+
+  img{
+    width:100%;
+  }
+
+  
+ 
+}
+
+@media only screen and (max-width: 500px) {
+  .info-section {
+    width: 97%;
+  }
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex2 {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    padding-left: 4rem;
+  }
+
+  .content-description {
+    width: 90%;
+  }
+
+  .image-container{
+    width:300px;
+    height:500px;
+    background-size: cover;
+    background-position: top;
+    transition: 1.4s ease-in-out;
+  }
+
+}
