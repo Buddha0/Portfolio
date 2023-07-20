@@ -1,10 +1,17 @@
 // MODAL
-const modal = document.querySelector(".info-section");
-const form = document.getElementById("myForm");
-const submitButton = document.getElementById("submit_btn");
+const modal = document.querySelector(".form-section");
+const openButton = document.querySelectorAll(".about");
 
-function toggle() {
-  modal.classList.toggle("show");
+openButton.forEach((btns)=>{
+  console.log(btns)
+  console.log("asd")
+  btns.addEventListener("click",()=>{
+    modal.classList.toggle("contact-show");
+  })
+})
+
+function closeModal(){
+  modal.classList.remove("contact-show");
 }
 
 // MY PROJECTS
@@ -36,40 +43,37 @@ const projects = [
   },
   {
     title: "loopStudio LandingPage",
-    description: `A Single Page Landing Page made with <span>HTML</span> and <span>CSS</span>`,
+    description: `A Single Page Landing Page made with <span>HTML,</span> <span>JavaScript</span> and <span>CSS</span>`,
     githubLink: "https://github.com/Buddha0/LandingPage",
     websiteLink: "https://capable-griffin-da828c.netlify.app/",
     websiteImage: "./images/loopstudio.png",
   },
 ];
 
-const projectsContainer = document.querySelector(".cards-container");
-const imageContainer = document.querySelector(".image-container");
+const projectsContainer = document.querySelector(".column");
+
 
 projectsContainer.innerHTML = projects
-  .map((project, index) => {
-    const isEven = index % 2 === 0;
-    const flexDirection = isEven ? "row" : "row-reverse";
+  .map((project) => {
+   
 
     return `
+    <div class="cards">
 
-<div class="cards" >
-<div class = "cards-flex" style = "display:flex; justify-content:space-between;flex-direction:${flexDirection};align-items:center;" >   
-<div class="image-container" style="background-image: url(${project.websiteImage}); background-size:cover;background-repeat:no-repeat"></div>
+    <img src="${project.websiteImage}">
 
-<div class="content-description">
-    <h1 class="heading">${project.title}</h1>
-    <p>
-       ${project.description}
-    </p>
-    <div class="icons">
-    <a href=${project.websiteLink} target="_blank"> <button class="btn">View
-                Site</button></a>
-                <a href=${project.githubLink} target="_blank"><button class="btn">View
-                Code <i class="fa-solid fa-code"></i></button></a>
+    <div class="cards-description">
+        <h1 class="heading">${project.title}</h1>
+        <p>
+            ${project.description}
+        </p>
+        <div class="buttons">
+            <a href=${project.websiteLink} target="_blank"> <i class="fa-solid fa-link"></i></a>
+            <a href=${project.githubLink} target="_blank">  <i class="fa-brands fa-github github-logo"></i>
+           </a>
+          
+        </div>
     </div>
-</div>
-</div>
 </div>
    
         `;
