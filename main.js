@@ -22,7 +22,7 @@ const projects = [
         It have add to cart functunality and price functionality. It also have dynamic stars for the
         ratings. You can sort the items by price or ratings and u can also search for the items. Implemented skeleton loading when images are not loaded.`,
     githubLink: "https://github.com/Buddha0/Ecommerce-",
-    websiteLink: "https://animeshoppy.netlify.app/",
+    websiteLink: "https://animeshopy.netlify.app/",
     websiteImage:
       "./images/screencapture-localhost-5174-2023-06-30-23_00_20.png",
   },
