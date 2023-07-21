@@ -324,6 +324,10 @@ img {
   transition: all 550ms ease;
   z-index: 4;
 }
+
+a{
+  color:black
+}
 .cards-description h1 {
   font-size: 2.7rem;
   margin: 3rem 0rem;
