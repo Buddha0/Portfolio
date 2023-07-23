@@ -30,8 +30,8 @@ const projects = [
   {
     title: "Movie Website",
     description: `A movie app made with <span>React</span> using the TMDb API where you can watch the movie trailers, select your genres and search for the movies. It have carousel scrooling. All the movies have dynamic routing and have skeleton loading when the images are not loaded.`,
-    githubLink: "https://github.com/Buddha0/Ecommerce-",
-    websiteLink: "https://fancy-mooncake-47efe2.netlify.app/",
+    githubLink: "https://github.com/Buddha0/Movie-App",
+    websiteLink: "https://moviechilll.netlify.app/",
     websiteImage: "./images/movie_screenshot.png",
   },
   {
