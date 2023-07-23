@@ -45,7 +45,7 @@ const projects = [
     title: "loopStudio LandingPage",
     description: `A Single Page Landing Page made with <span>HTML,</span> <span>JavaScript</span> and <span>CSS</span>`,
     githubLink: "https://github.com/Buddha0/LandingPage",
-    websiteLink: "https://capable-griffin-da828c.netlify.app/",
+    websiteLink: "https://looppstudio.netlify.app/",
     websiteImage: "./images/loopstudio.png",
   },
 ];
